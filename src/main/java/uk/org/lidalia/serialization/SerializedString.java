@@ -1,6 +1,6 @@
 package uk.org.lidalia.serialization;
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 
 import uk.org.lidalia.lang.Identity;
 
