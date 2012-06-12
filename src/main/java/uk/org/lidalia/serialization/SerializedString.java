@@ -1,16 +1,15 @@
 package uk.org.lidalia.serialization;
 
-import org.apache.commons.lang3.Validate;
-
 import uk.org.lidalia.lang.Identity;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 public class SerializedString extends Serialized {
-	
+
 	@Identity protected final String string;
 
 	public SerializedString(String string) {
-		Validate.notNull(string);
-		this.string = string;
+		this.string = checkNotNull(string);
 	}
 
 	@Override
