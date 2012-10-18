@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Test {
 
-	public Test(Map<String, String> something) {
-		
-	}
+    public Test(Map<String, String> something) {
+
+    }
 }

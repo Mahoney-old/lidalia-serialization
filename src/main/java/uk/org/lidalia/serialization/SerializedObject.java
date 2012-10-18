@@ -6,63 +6,63 @@ import java.util.Map;
 import java.util.Set;
 
 public class SerializedObject extends Serialized implements Map<String, Serialized> {
-	
-	private final Map<String, Serialized> data = new HashMap<String, Serialized>();
 
-	public void clear() {
-		data.clear();
-	}
+    private final Map<String, Serialized> data = new HashMap<String, Serialized>();
 
-	public boolean containsKey(Object key) {
-		return data.containsKey(key);
-	}
+    public void clear() {
+        data.clear();
+    }
 
-	public boolean containsValue(Object value) {
-		return data.containsValue(value);
-	}
+    public boolean containsKey(Object key) {
+        return data.containsKey(key);
+    }
 
-	public Set<java.util.Map.Entry<String, Serialized>> entrySet() {
-		return data.entrySet();
-	}
+    public boolean containsValue(Object value) {
+        return data.containsValue(value);
+    }
 
-	public boolean equals(Object o) {
-		return data.equals(o);
-	}
+    public Set<java.util.Map.Entry<String, Serialized>> entrySet() {
+        return data.entrySet();
+    }
 
-	public Serialized get(Object key) {
-		return data.get(key);
-	}
+    public boolean equals(Object o) {
+        return data.equals(o);
+    }
 
-	public int hashCode() {
-		return data.hashCode();
-	}
+    public Serialized get(Object key) {
+        return data.get(key);
+    }
 
-	public boolean isEmpty() {
-		return data.isEmpty();
-	}
+    public int hashCode() {
+        return data.hashCode();
+    }
 
-	public Set<String> keySet() {
-		return data.keySet();
-	}
+    public boolean isEmpty() {
+        return data.isEmpty();
+    }
 
-	public Serialized put(String key, Serialized value) {
-		return data.put(key, value);
-	}
+    public Set<String> keySet() {
+        return data.keySet();
+    }
 
-	public void putAll(Map<? extends String, ? extends Serialized> m) {
-		data.putAll(m);
-	}
+    public Serialized put(String key, Serialized value) {
+        return data.put(key, value);
+    }
 
-	public Serialized remove(Object key) {
-		return data.remove(key);
-	}
+    public void putAll(Map<? extends String, ? extends Serialized> m) {
+        data.putAll(m);
+    }
 
-	public int size() {
-		return data.size();
-	}
+    public Serialized remove(Object key) {
+        return data.remove(key);
+    }
 
-	public Collection<Serialized> values() {
-		return data.values();
-	}
+    public int size() {
+        return data.size();
+    }
+
+    public Collection<Serialized> values() {
+        return data.values();
+    }
 
 }
